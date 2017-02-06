@@ -1,0 +1,240 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Home
+    %link{:href => "css/reset.css", :rel => "stylesheet"}/
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "css/animate.css", :rel => "stylesheet"}/
+    %link{:href => "css/header.css", :rel => "stylesheet"}/
+    %link{:href => "css/footer.css", :rel => "stylesheet"}/
+    %link{:href => "css/home.css", :rel => "stylesheet"}/
+    %link{:href => "css/styles.css", :rel => "stylesheet"}/
+  %body
+    #wrapper
+      .top
+      %header#header
+        .container
+          %nav.navbar
+            .container
+              .navbar-header
+                %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+                  %span.sr-only Toggle navigation
+                  %span.icon-bar
+                  %span.icon-bar
+                  %span.icon-bar
+                .logo
+                  %a.navbar-brand{:href => ""}
+                    %img.img-responsive{:alt => "logo", :src => "img/logo.png"}/
+                    .logo-text
+                      %p.logo-text-top Business Stack
+                      %p.logo-text-bottom Simple. Elegent. Responsive
+              #navbar.nav.navbar-nav.navbar-right.navbar-collapse.collapse
+                %ul.nav.navbar-nav.text-center
+                  %li.active.first
+                    %a{:href => ""} Home
+                  %li.menu
+                    %a{:href => "page"} Page
+                    %ul.sub-menu
+                      %li
+                        %a{:href => "page"} Single Wide
+                      %li
+                        %a{:href => "page"} 2 column
+                      %li
+                        %a{:href => "page"} Pricing
+                      %li
+                        %a{:href => "page"} FAQ
+                  %li
+                    %a{:href => "team"} Team
+                  %li
+                    %a{:href => "blog"} Blog
+                  %li
+                    %a{:href => "portfolio"} Portfolio
+                  %li.last
+                    %a.last{:href => "contact"} Contact
+      %section#slider.slider
+        #carousel.carousel.slide{"data-interval" => "false", "data-ride" => "carousel"}
+          %ul.carousel-indicators.visible-lg.visible-md
+            %li.active{"data-slide-to" => "0", "data-target" => "#carousel"}
+              %p Managing Changing Priorities
+            %li{"data-slide-to" => "1", "data-target" => "#carousel"}
+              %p Complete Project Clarity for The Whole
+            %li{"data-slide-to" => "2", "data-target" => "#carousel"}
+              %p Spend Time On Business
+            %li{"data-slide-to" => "3", "data-target" => "#carousel"}
+              %p Develier Tools That Works
+            %a.left.left-1.carousel-control.carousel-control1{"data-slide" => "prev", :href => "#carousel", :role => "button"}
+              %img{:alt => "icon left", :src => "img/icon-left.png"}/
+            %a.right.right-1.carousel-control.carousel-control1{"data-slide" => "next", :href => "#carousel", :role => "button"}
+              %img{:alt => "icon right", :src => "img/icon-right.png"}/
+          .carousel-inner{:role => "listbox"}
+            .item.active.single-slider
+              %img.img-responsive.img-100{:alt => "home", :src => "img/home.jpg"}/
+              .carousel-caption
+                %h1 Simple. Fully Customizable1
+            .item.single-slider
+              %img.img-responsive.img-100{:alt => "carousel", :src => "img/bg-carousel.jpg"}/
+              .carousel-caption
+                %h1 Healthy2
+            .item.single-slider
+              %img.img-responsive.img-100{:alt => "home", :src => "img/home.jpg"}/
+              .carousel-caption
+                %h1 Healthy3
+            .item.single-slider
+              %img.img-responsive.img-100{:alt => "carousel", :src => "img/bg-carousel.jpg"}/
+              .carousel-caption
+                %h1 Healthy4
+            %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel", :role => "button"}
+              %i.fa.fa-angle-left{"aria-hidden" => "true"}
+            %a.right.carousel-control{"data-slide" => "next", :href => "#carousel", :role => "button"}
+              %i.fa.fa-angle-right{"aria-hidden" => "true"}
+      / slider
+      .bg-white
+      .bg-gray
+      %section#main-content
+        .container
+          .row
+            .col-lg-9.col-md-9.col-sm-9.col-xs-12
+              .blockquote
+                %h3 Blockquote
+                %blockquote
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque consectetur in dolor. Aliquam iste voluptate, deserunt veniam, quidem corporis quis, dicta excepturi nostrum laboriosam eligendi, quae voluptatibus explicabo! Ipsam.
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus assumenda hic, quo eum, sequi nulla delectus facilis laborum quasi obcaecati aliquid. Obcaecati at, officiis aut nobis, ut possimus dolorem veniam.
+              .panel-container
+                %h2 Accordion
+                .panel.panel-default
+                  .panel-heading
+                    %h4.panel-title Accordion
+                    %span.pull-right.clickable
+                      %i.glyphicon.glyphicon-chevron-up
+                  .panel-body
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo saepe eius, quasi mollitia nulla obcaecati est, suscipit rerum repellat inventore at quibusdam et maxime facere perspiciatis a ut sunt amet.
+                .panel.panel-default
+                  .panel-heading
+                    %h4.panel-title Accordion
+                    %span.pull-right.clickable.panel-collapsed
+                      %i.glyphicon.glyphicon-chevron-down
+                  .panel-body{:style => "display: none;"}
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo saepe eius, quasi mollitia nulla obcaecati est, suscipit rerum repellat inventore at quibusdam et maxime facere perspiciatis a ut sunt amet.
+                .panel.panel-default
+                  .panel-heading
+                    %h4.panel-title Accordion
+                    %span.pull-right.clickable.panel-collapsed
+                      %i.glyphicon.glyphicon-chevron-down
+                  .panel-body{:style => "display: none;"}
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo saepe eius, quasi mollitia nulla obcaecati est, suscipit rerum repellat inventore at quibusdam et maxime facere perspiciatis a ut sunt amet.
+                .panel.panel-default
+                  .panel-heading
+                    %h4.panel-title Accordion
+                    %span.pull-right.clickable.panel-collapsed
+                      %i.glyphicon.glyphicon-chevron-down
+                  .panel-body{:style => "display: none;"}
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo saepe eius, quasi mollitia nulla obcaecati est, suscipit rerum repellat inventore at quibusdam et maxime facere perspiciatis a ut sunt amet.
+              / panel end
+              .tab-container
+                %h2 Multiple tab
+                %ul.nav.nav-tabs
+                  %li.active
+                    %a{"data-toggle" => "tab", :href => "#home"} Tab 1
+                  %li
+                    %a{"data-toggle" => "tab", :href => "#menu1"} Tab 2
+                  %li
+                    %a{"data-toggle" => "tab", :href => "#menu2"} Tab 3
+                  %li
+                    %a{"data-toggle" => "tab", :href => "#menu3"} Tab 4
+                .tab-content
+                  #home.tab-pane.fade.in.active
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+                  #menu1.tab-pane.fade
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+                  #menu2.tab-pane.fade
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+                  #menu3.tab-pane.fade
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+            .col-lg-3.col-md-3.col-sm-3.hidden-xs
+              .tweet
+                %h3 Recent Tweet
+                .twitter-content
+                  .twitter-text
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    %p.time 2 days ago
+                  %img{:alt => "tweet logo", :src => "img/icon.png"}/
+                .twitter-content
+                  .twitter-text
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    %p.time 2 days ago
+                  %img{:alt => "tweet logo", :src => "img/icon.png"}/
+                .twitter-content
+                  .twitter-text
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    %p.time 2 days ago
+                    %img{:alt => "tweet logo", :src => "img/icon.png"}/
+                .side-menu
+                  %h3 Side Menu
+                  %ul
+                    %li.active
+                      %a{:href => "index.html"} Home
+                    %li
+                      %a{:href => "page.html"} Page
+                    %li
+                      %a{:href => "team.html"} Team
+                    %li
+                      %a{:href => "blog.html"} Blog
+                    %li
+                      %a{:href => "portfolio.html"} Portfolio
+                    %li
+                      %a{:href => "contact.html"} Contact
+      %footer#footer.footer.panel-footer
+        .container
+          .row
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+              .text-footer
+                %h5.title Text Widget
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, tempora explicabo et libero iure ad maxime aspernatur non culpa, ab ut, esse repellendus quae ducimus nulla laborum. Necessitatibus, dolores, iste.
+            .col-lg-3.col-md-3.col-sm-4.col-xs-12
+              .text-footer.elem-4
+                %h5.title Links Widget
+                %ol
+                  %li these words will
+                  %li youo of the price paid
+                  %li will remind
+                  %li by Grissom ...
+                  %li Career, Press Release
+                  %li will remind
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+              .text-footer
+                %h5.title Twitter Widget
+                .twitter-content
+                  .twitter-text
+                    %p.time 2 days ago
+                    %p I believe that this nation should commit itself to achieving the goal
+                  %img{:alt => "tweet logo", :src => "img/icon.png"}/
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12.mar-15
+              .text-footer.form-email
+                %h5.title Form Widget
+                %form
+                  %input{:name => "name", :placeholder => "Name", :type => "text"}/
+                  %input{:name => "email", :placeholder => "Email", :type => "email"}/
+                  %textarea#message{:cols => "20", :name => "message", :placeholder => "Message", :rows => "4"}
+                  %input{:name => "submit", :type => "submit", :value => "Send"}/
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12.copy-right
+              %ul.social.mb-60.wow.fadeInUp{"data-wow-duration" => "1.5s"}
+                %li
+                  %a.facebook-icon{:href => "https://www.facebook.com/", :target => "_blank"}
+                    %i.fa.fa-facebook
+                %li
+                  %a.tumblr-icon{:href => "https://www.tumblr.com/", :target => "_blank"}
+                    %i.fa.fa-tumblr
+                %li
+                  %a.google-icon{:href => "https://google.com/", :target => "_blank"}
+                    %i.fa.fa-google
+    %script{:src => "js/jquery.min.js"}
+    %script{:src => "js/bootstrap.min.js"}
+    %script{:src => "js/isotope.min.js"}
+    %script{:src => "js/main.js"}
