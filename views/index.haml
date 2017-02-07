@@ -148,15 +148,19 @@
                     %a{"data-toggle" => "tab", :href => "#menu2"} Tab 3
                   %li
                     %a{"data-toggle" => "tab", :href => "#menu3"} Tab 4
+                - tab_contents = [['home', 'tab-pane fade in active','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta in quidem maxime accusantium earum iste laborum expedita quo, praesentium quisquam impedit dolorem tempore similique, quod vel doloribus laboriosam cupiditate et!'], ['menu1', 'tab-pane fade', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem quaerat molestiae magni excepturi deleniti ipsam voluptatum, eveniet, officia voluptates. Tempora possimus veritatis debitis, dolorum magni consequuntur numquam ad repellendus!'], ['menu2', 'tab-pane fade', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit consequatur facilis ullam sint numquam reiciendis tempora. Omnis dolor, esse ex aut velit saepe quos, voluptatum delectus ducimus quo necessitatibus dignissimos!'], ['menu3', 'tab-pane fade', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis ducimus iusto maiores veritatis hic consequatur in ea. Nihil reprehenderit aliquam sed necessitatibus commodi facere dolores recusandae id maxime fugiat.']]
                 .tab-content
-                  #home.tab-pane.fade.in.active
-                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
-                  #menu1.tab-pane.fade
-                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
-                  #menu2.tab-pane.fade
-                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
-                  #menu3.tab-pane.fade
-                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+                  - tab_contents.each do |id, classN, tab_content| 
+                    %div{:id=>"#{id}", :class=>"#{classN}"}
+                      %p= tab_content 
+                  / #home.tab-pane.fade.in.active
+                  /   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+                  / #menu1.tab-pane.fade
+                  /   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+                  / #menu2.tab-pane.fade
+                  /   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
+                  / #menu3.tab-pane.fade
+                  /   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam qui veritatis molestiae, quos expedita dolorum tempora eos quidem veniam nisi enim asperiores sequi ad, neque aliquid reiciendis ratione fuga?
             .col-lg-3.col-md-3.col-sm-3.hidden-xs
               .tweet
                 %h3 Recent Tweet
